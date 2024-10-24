@@ -1,0 +1,80 @@
+/*Algemene stijlen voor de hele pagina*/
+/*flexbox voor de hele body*/
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ecabe1;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eac7c7;
+  margin: 20px;
+}
+
+/*Stijlen voor kopteksten*/
+h1 {
+  color: #1e010b;
+  text-align: center;
+  font-size: 36px;
+}
+
+h2 {
+  color: #280212;
+  font-size: 24px;
+}
+
+/*Stijlen voor parafragen*/
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: black;
+}
+
+/*Stijlen voor afbeeldingen*/
+img {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
+
+/*Stijlen voor links*/
+a {
+  color: #9a1b4f;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/*flex-container voor secties*/
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 20px 0;
+}
+
+/*Stijl voor individuele secties*/
+.flex-item {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 45%; /*Kan aanpassen voor kleinere of grotere elementen*/
+  text-align: center;
+}
+
+/*flexbox voor afbeeldingen*/
+.flex-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* youtube video laten passen in de container*/
+iframe {
+  border: 0;
+  width: fit-content;
+}
